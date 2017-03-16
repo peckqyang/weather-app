@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row row-centered voffset">
+            <h1>Hello, how's the weather today?</h1>
+        </div>
+        <div class="row row-centered voffset">
+            <div class="col-md-3 col-centered">
+                <form id="weather-request">
+                    <div class="form-group">
+                        <label for="city-input">City</label>
+                        <input id="city-input" class="form-control" type="text" placeholder="San Francisco">
+                    </div>
+                    <div class="form-group">
+                        <label for="country-input">Country</label>
+                        <input id="country-input" class="form-control" type="text" placeholder="USA">
+                    </div>
+                    <div class="form-group">
+                        <label for="data-provider">Weather Data Provider</label>
+                        <select id="data-provider" class="form-control">
+                            <option>Openweathermap.org</option>
+                            <option>Darksky.net</option>
+                        </select>
+                    </div>
+                    <button type="button" id="weather-request-button" class="btn btn-primary">Get Current Weather</button>
+                </form>
+            </div>
+            <div class="col-md-3 col-md-offset-1 col-centered">
+                <div class="panel panel-default">
+                    <div class="panel-body" id="weather-panel">
+                        <h4 id="location"></h4>
+                        <h6 id="condition"></h6>
+                        <h2 id="temp"></h2>
+                        <img id="condition-pic" src="">
+                    </div>
+                    <div class="panel-footer">
+                        <small>Source: <a id ="data-source" href=""></a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-centered voffset">
+            <div class="col-md-7 col-centered">
+                <div id="map"></div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; Peck Yang 2017</p>
+        </footer>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="skycons.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="main.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUrjgSLuC5Axrywmxx6dUz1pc7_-4yjiI&callback=initMap">
+    </script>
+</body>
+
+</html>
