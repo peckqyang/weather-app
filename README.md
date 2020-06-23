@@ -8,4 +8,4 @@ You can choose between two weather providers:
 - Openweathermap.org
 - Darksky.net
 
-Project is hosted [here](https://weather-app-975b8.firebaseapp.com/)
+Project is hosted [here](https://weather-app-975b8.firebaseapp.com/)fdafdsad
